@@ -183,14 +183,14 @@
         return m;
     };
 
-    var botCreator = "Matthew (Yemasthui)";
+    var botCreator = "Matthew (Kryptonkakan)";
     var botMaintainer = "Benzi (Quoona)"
     var botCreatorIDs = ["3851534", "4105209"];
 
     var snusBot = {
-        version: "1.0",
+        version: "2.4.5",
         status: false,
-        name: "Snus Bot",
+        name: "snusBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Kryptonkakan/basicBot/master/snusBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -200,7 +200,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Snus Bot",
+            botName: "snusBot",
             language: "english",
             chatLink: "https://rawgit.com/Kryptonkakan/basicBot/master/lang/en.json",
             startupCap: 1, // 1-200
@@ -246,7 +246,7 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: "Thess är sexig på röntgen bilder",
+            fbLink: null,
             youtubeLink: null,
             website: null,
             intervalMessages: [],
@@ -1307,8 +1307,22 @@
                 return perm >= minPerm;
 
             },
+            /**
+             command: {
+                        command: 'cmd',
+                        rank: 'user/bouncer/mod/manager',
+                        type: 'startsWith/exact',
+                        functionality: function(chat, cmd){
+                                if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                                if( !snusBot.commands.executable(this.rank, chat) ) return void (0);
+                                else{
+                                
+                                }
+                        }
+                },
+             **/
 
-activeCommand: {
+            activeCommand: {
                 command: 'active',
                 rank: 'bouncer',
                 type: 'startsWith',
