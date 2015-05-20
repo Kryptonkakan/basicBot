@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/Kryptonkakan/basicBot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -174,7 +174,7 @@
         return m;
     };
 
-    var botCreator = "Matthew (Yemasthui)";
+    var botCreator = "Matthew (Kryptonkakan)";
     var botMaintainer = "Benzi (Quoona)"
     var botCreatorIDs = ["3851534", "4105209"];
 
@@ -183,9 +183,9 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
+        scriptLink: "https://rawgit.com/Kryptonkakan/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Kryptonkakan/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/Kryptonkakan/basicBot/master/lang/en.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
@@ -245,8 +245,8 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+                NSFW: "https://rawgit.com/Kryptonkakan/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+                OP: "https://rawgit.com/Kryptonkakan/basicBot-customization/master/blacklists/ExampleOPlist.json"
             }
         },
         room: {
@@ -2215,7 +2215,7 @@
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+                        $.get("https://rawgit.com/Kryptonkakan/basicBot/master/lang/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
