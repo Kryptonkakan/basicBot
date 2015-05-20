@@ -152,7 +152,7 @@
     "emojilist": "\/me Emoji list: %%LINK%%",
     "notinwaitlist": "\/me @%%NAME%%, you are not on the waitlist.",
     "eta": "\/me @%%NAME%% you will reach the booth in approximately %%TIME%%.",
-    "facebook": "\/me Like us on <a href="http://facebook.com/Snaubrothers">Facebook</a>,
+    "facebook": "\/me Like us on Facebook! tiny.cc/Snusbrothers",
     "starterhelp": "\/me This image will get you started on plug: %%LINK%%",
     "roulettejoin": "\/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
     "jointime": "\/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
